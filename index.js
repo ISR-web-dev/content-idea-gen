@@ -48,7 +48,9 @@ const sendEmail = async (ideas) => {
     text: ideas,
   });
 };
-
+app.get("/", (req, res)=>{
+  res.send("Please visit /run...");
+})
 app.get("/run", async (req, res) => {
   try {
     const ideas = await generateContentIdeas();
