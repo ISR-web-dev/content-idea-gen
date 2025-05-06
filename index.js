@@ -49,7 +49,7 @@ const sendEmail = async (ideas) => {
   });
 };
 app.get("/", (req, res)=>{
-  res.send("Please visit /run... Please");
+  res.send("Please visit /run...");
 })
 app.get("/run", async (req, res) => {
   try {
